@@ -20,6 +20,7 @@ or a timeout. Its static outage mode denies asset requests but keeps report APIs
 reachable. The service worker only serves an explicit manifest of local files.
 
 Primary API references consulted 2026-11-09:
+
 - https://www.w3.org/TR/webgpu/
 - https://webassembly.github.io/spec/core/
 - https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API

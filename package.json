@@ -4,7 +4,15 @@
   "description": "Auditable browser ticket classification with WebGPU and WebAssembly",
   "type": "module",
   "license": "MIT",
-  "files": ["src", "public", "data", "scripts", "docs", "README.md", "LICENSE"],
+  "files": [
+    "src",
+    "public",
+    "data",
+    "scripts",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "node --test",
@@ -12,6 +20,11 @@
     "serve": "node scripts/server.mjs",
     "replay": "node scripts/replay.mjs"
   },
-  "engines": {"node": ">=22"},
-  "devDependencies": {"wabt": "1.0.37", "prettier": "3.6.2"}
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "wabt": "1.0.37",
+    "prettier": "3.6.2"
+  }
 }
