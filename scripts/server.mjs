@@ -61,6 +61,7 @@ const server = http.createServer(async (req, res) => {
         const report = JSON.parse(body);
         if (!report.finishedAt || report.context?.token !== token)
           return send(400, "Incomplete report");
+        delete report.context.token;
         report.harness = {
           staticOutage: offline,
           deniedRequests: denied,

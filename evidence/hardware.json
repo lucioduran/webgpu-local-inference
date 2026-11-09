@@ -1,0 +1,16 @@
+{
+  "observedDate": "2026-11-09",
+  "source": "system_profiler SPHardwareDataType SPDisplaysDataType; sw_vers",
+  "physicalDevices": 1,
+  "model": "Mac Pro (MacPro7,1)",
+  "cpu": "8-Core Intel Xeon W, 3.5 GHz",
+  "physicalCores": 8,
+  "memoryGB": 48,
+  "gpu": "AMD Radeon Pro W5700X",
+  "vramGB": 16,
+  "metal": "Metal 3",
+  "os": "macOS 26.7.1 (25G241)",
+  "browserVersion": null,
+  "webgpuAdapter": null,
+  "note": "Host hardware does not establish browser adapter availability. Serial numbers and hardware identifiers omitted."
+}

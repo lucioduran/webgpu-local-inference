@@ -1,0 +1,21 @@
+{
+  "status": "blocked-before-browser-execution",
+  "date": "2026-11-09",
+  "sourceCommit": "e4448aa",
+  "observations": [
+    {"tool": "cua.getState", "result": "Browser inventory was empty. Safari was listed as a running native app."},
+    {"tool": "cua.createBrowserTab('iab', 'http://127.0.0.1:8025', {visible:true})", "result": "Browser is not available: iab"},
+    {"tool": "cua.getApp('com.apple.Safari')", "result": "js execution timed out; kernel reset, rerun your request", "timeoutMs": 30000},
+    {"tool": "cua.getApp('com.apple.Safari')", "result": "Sky Computer Use native pipe closed before response", "timeoutMs": 60000}
+  ],
+  "lock": {
+    "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 /Users/luchoduran/Sites/open-source-projects/.coordination/benchmark_lock.py node scripts/server.mjs --benchmark",
+    "stdout": ["Waiting for the shared benchmark lock...", "Benchmark lock acquired.", "Open http://127.0.0.1:8025 and click Run fixed browser evaluation. Lock must remain held."],
+    "termination": "SIGTERM after browser connection failures; process exited 143. No measured browser workload started."
+  },
+  "browserInferencePerformed": false,
+  "webgpuAdapterObserved": false,
+  "browserWasmObserved": false,
+  "offlineBrowserStartupObserved": false,
+  "provenance": "Manually preserved tool responses from this session. Not an automatically generated browser report."
+}
