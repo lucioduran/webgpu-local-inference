@@ -1,0 +1,39 @@
+{
+  "license": "MIT",
+  "provenance": "Original synthetic support tickets. No customer data. Fixed before measurement.",
+  "labels": ["billing", "access", "delivery"],
+  "train": [
+    ["billing", "invoice payment charge refund money card bill"],
+    ["billing", "charged twice payment invoice refund cost price"],
+    ["billing", "subscription billing cancel charge credit card"],
+    ["billing", "receipt invoice tax payment money refund"],
+    ["access", "login password account locked reset sign"],
+    ["access", "cannot login password reset account access"],
+    ["access", "authentication code sign login verification locked"],
+    ["access", "account access password email reset authentication"],
+    ["delivery", "package shipping delivery tracking parcel order"],
+    ["delivery", "shipment late package tracking delivery address"],
+    ["delivery", "order arrived damaged parcel shipping courier"],
+    ["delivery", "delivery missing package address tracking delayed"]
+  ],
+  "development": [
+    ["billing", "please refund my payment"],
+    ["access", "reset the password"],
+    ["delivery", "my package is late"]
+  ],
+  "evaluation": [
+    ["billing", "my card was charged twice"],
+    ["billing", "please send the tax invoice"],
+    ["billing", "cancel the subscription and refund money"],
+    ["billing", "I need a receipt for payment"],
+    ["access", "my account is locked"],
+    ["access", "the login verification code failed"],
+    ["access", "cannot reset my password"],
+    ["access", "authentication prevents account access"],
+    ["delivery", "the courier has my damaged parcel"],
+    ["delivery", "tracking says shipment delayed"],
+    ["delivery", "my order arrived at another address"],
+    ["delivery", "the delivery package is missing"]
+  ],
+  "abstention": ["", "hello wonderful weather", "1234"]
+}

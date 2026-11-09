@@ -1,0 +1,26 @@
+{
+  "data/fixtures.json": {
+    "bytes": 1828,
+    "sha256": "e1575dfcf3fcaacb6fdf853ae9382cbea8fcc990f0a727822a4d198eaf03adbd"
+  },
+  "public/model.json": {
+    "bytes": 3951,
+    "sha256": "4c92113f9dc216f16da3052b22520e7296058727be907f9246bc67eca364960b"
+  },
+  "public/kernel.wasm": {
+    "bytes": 158,
+    "sha256": "e6ff07ad2ed4cc604698396177c8ab49f0f88a443255108e12d7cc0482fa7936"
+  },
+  "src/kernel.wat": {
+    "bytes": 1033,
+    "sha256": "5b7a4d8a0fe02b3c19c4220ad7d271759c0d4696883e918200d586cbc85039b2"
+  },
+  "src/model.js": {
+    "bytes": 1708,
+    "sha256": "5306a4973107966063815a55d8d91db65efdd2d63af7d4e87e5499486f1d094b"
+  },
+  "src/engine.js": {
+    "bytes": 5373,
+    "sha256": "bbd982f4a1efbe63e9dcba041d1a72740cb79c4ca0e4aae9aebe6ee3c4dbce95"
+  }
+}

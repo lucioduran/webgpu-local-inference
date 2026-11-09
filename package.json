@@ -1,0 +1,17 @@
+{
+  "name": "webgpu-local-inference",
+  "version": "1.0.0",
+  "description": "Auditable browser ticket classification with WebGPU and WebAssembly",
+  "type": "module",
+  "license": "MIT",
+  "files": ["src", "public", "data", "scripts", "docs", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "check": "node scripts/check.mjs",
+    "serve": "node scripts/server.mjs",
+    "replay": "node scripts/replay.mjs"
+  },
+  "engines": {"node": ">=22"},
+  "devDependencies": {"wabt": "1.0.37", "prettier": "3.6.2"}
+}
