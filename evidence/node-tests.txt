@@ -1,0 +1,22 @@
+
+> webgpu-local-inference@0.1.0 test
+> node --test
+
+✔ deterministic training uses only the training partition (2.279553ms)
+✔ tokenizer validates and normalizes (0.366087ms)
+✔ partitions are distinct (0.301372ms)
+✔ real WASM matches float32 reference on all fixed cases (9.51181ms)
+✔ unknown inputs abstain and ties choose first class (0.297645ms)
+✔ unavailable and throwing adapters fall back only in auto mode (1.666921ms)
+✔ invalid model, backend, WASM, input and cancellation reject (1.855939ms)
+✔ recorded real browser report is internally consistent (7.00353ms)
+✔ report verification rejects changed scores, missing checks and unsupported offline claims (22.960648ms)
+✔ static server serves app, rejects missing paths and disables report APIs (206.083569ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 384.174347

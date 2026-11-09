@@ -1,0 +1,5 @@
+
+> webgpu-local-inference@0.1.0 smoke
+> node scripts/smoke.mjs
+
+Installed tarball offline: real WASM prediction and browser assets passed.

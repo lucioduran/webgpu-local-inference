@@ -4,9 +4,9 @@ A transparent support-ticket classifier with native WebGPU compute and real
 WebAssembly kernels. No runtime dependencies, external model downloads or hosted
 inference.
 
-**Browser verification is blocked. This is an experimental prerelease, not a
-verified WebGPU release.** Node WASM works; no browser inference or offline
-startup result is claimed. See [the preserved blocker](evidence/browser-blocker.json).
+**Verified on one physical device in in-app Chromium 157:** native WebGPU and
+browser WASM produced identical scores on the fixed synthetic task, online and
+after a cached reload during a static origin outage. See [raw evidence](evidence/browser-1794256500335.json).
 
 ## Problem
 
@@ -108,25 +108,58 @@ this workspace.
 
 ## Results
 
-Actual local tests: 12/12 evaluation tickets classified correctly by Node WASM,
-with exact agreement against the float32 reference. These are synthetic,
-vocabulary-overlapping fixtures, not a real-world accuracy estimate.
+The locked browser run on 2026-11-09 used source commit
+`615e4051094b1b9ec865d920503a1516947cae71`, with a clean tree at harness start.
+The released model, fixture, WASM, WGSL engine and browser workload are unchanged
+from that run. Subsequent changes concern reports, replay checks, packaging and
+Git metadata handling. Each row below contains three fixed rounds of 12 tickets,
+with no warm-up exclusion. All 144 browser predictions had the expected label
+and exact float32 reference scores (maximum absolute error 0).
 
-| Environment                | WebGPU                               | WASM              | Offline browser startup |
-| -------------------------- | ------------------------------------ | ----------------- | ----------------------- |
-| Node 24.8.0, macOS 26.7.1  | Not a browser test                   | Unit tests passed | Not applicable          |
-| In-app browser             | Provider unavailable                 | Not run           | Not run                 |
-| Safari native connection   | Connection failed before page access | Not run           | Not run                 |
-| Other browsers and devices | Not tested                           | Not tested        | Not tested              |
+| Phase         | Backend | Correct | Initialization | First inference        | Median inference       | p95 inference |
+| ------------- | ------- | ------- | -------------- | ---------------------- | ---------------------- | ------------- |
+| Online        | WebGPU  | 36/36   | 49.2 ms        | 7.3 ms                 | 0.4 ms                 | 1.5 ms        |
+| Online        | WASM    | 36/36   | 0.6 ms         | 0.2 ms                 | Below timer resolution | 0.1 ms        |
+| Cached reload | WebGPU  | 36/36   | 6.0 ms         | 0.7 ms                 | 0.4 ms                 | 0.7 ms        |
+| Cached reload | WASM    | 36/36   | 0.3 ms         | Below timer resolution | Below timer resolution | 0.1 ms        |
+
+In each WASM phase, 34/36 durations were reported as zero by the browser timer.
+These values do not mean instantaneous computation, and no speedup ratio is
+justified. The median averages the two central values; p95 uses nearest rank.
+Download response bodies were 3,951 bytes for model JSON (3.5 ms) and 158 bytes
+for WASM (3.1 ms), from loopback, not an Internet download. Resource timing
+entries also preserve transfer and encoded body sizes for runtime JavaScript.
+Explicit GPU buffer allocation was 712 bytes; WASM linear memory was 65,536
+bytes. These are logical allocation sizes, not measured process or GPU memory.
+
+| Environment                           | WebGPU             | WASM         | Offline browser startup                      |
+| ------------------------------------- | ------------------ | ------------ | -------------------------------------------- |
+| In-app Chromium 157.0.0.0 on this Mac | Passed, AMD RDNA 1 | Passed       | Both passed with origin static assets denied |
+| Node 24.8.0 on this Mac               | Not a browser test | Tests passed | Not applicable                               |
+| Safari native connection              | Page access failed | Not run      | Not run                                      |
+| Other browsers and devices            | Not tested         | Not tested   | Not tested                                   |
 
 One physical machine: Mac Pro, 8-core Intel Xeon W, 48 GB RAM, AMD Radeon Pro
-W5700X with 16 GB VRAM. This host inventory does not establish WebGPU adapter
-availability. Browser version and adapter identity were not observable.
+W5700X with 16 GB VRAM, macOS 26.7.1. Browser adapter fields reported vendor
+`amd` and architecture `rdna-1`; device and description were empty. The browser
+user agent masks the OS version, so host OS comes from `sw_vers`.
 
-[Raw blocker observations](evidence/browser-blocker.json) and
-[hardware inventory](evidence/hardware.json) preserve the limitations. No browser
-download timing, initialization timing, inference timing, measured memory,
-speedup, power, cost or cross-backend browser accuracy is reported.
+Actual browser checks passed for unknown inputs, pre-cancellation, GPU in-flight
+cancellation, concurrent call rejection, deliberately destroyed GPU device,
+injected unavailable-adapter fallback to real WASM, malformed WASM, invalid
+model, strict adapter failure and HTTP 404. Device destruction and adapter
+unavailability were injected tests, not spontaneous failures.
+
+The offline phase loaded a fresh document from the service-worker cache while
+the server rejected eight asset requests, including both model and WASM. The
+local report endpoint remained available. This does not establish offline
+behavior after OS disconnection, storage eviction or browser restart.
+
+See [raw report](evidence/browser-1794256500335.json),
+[derived summary](evidence/summary.json), [run provenance](evidence/run-provenance.md)
+and [hardware inventory](evidence/hardware.json). The initial project-chat
+connection failures are preserved in [the failed attempt](evidence/browser-blocker.json).
+The coordinator's working CUA browser connection subsequently completed the run.
 
 ## Testing
 
@@ -148,10 +181,9 @@ CI does not substitute for browser GPU testing.
 
 ## Limitations
 
-Browser automation exposed no providers; Safari native access failed twice.
-Actual browser WebGPU, WASM fallback, cancellation, explicit device loss and
-cached offline startup remain unverified. The harness implements these checks
-but implementation is not execution evidence. No spontaneous device loss was
+The project chat initially lacked browser access; the coordinator operated the
+real in-app Chromium UI through supported CUA APIs while this project's harness
+held the shared lock. Safari was not tested. No spontaneous device loss was
 observed. Adapter failure injection and deliberate destruction are labeled tests.
 
 Only one host was available. No mobile, cross-browser or cross-device claims.

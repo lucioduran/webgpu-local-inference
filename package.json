@@ -13,7 +13,8 @@
     "README.md",
     "LICENSE",
     "index.html",
-    "sw.js"
+    "sw.js",
+    "evidence"
   ],
   "scripts": {
     "build": "node scripts/build.mjs",
@@ -29,8 +30,8 @@
     "node": ">=22"
   },
   "devDependencies": {
-    "eslint": "9.39.1",
-    "globals": "16.5.0",
+    "eslint": "9.39.5",
+    "globals": "17.14.0",
     "prettier": "3.6.2",
     "wabt": "1.0.37"
   },

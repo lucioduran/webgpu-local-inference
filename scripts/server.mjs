@@ -9,14 +9,19 @@ const port = Number(process.env.PORT ?? 8025);
 const token = randomBytes(16).toString("hex");
 let offline = false;
 const denied = [];
+let revision = { commit: null, dirty: null };
+try {
+  const options = { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] };
+  revision = {
+    commit: execFileSync("git", ["rev-parse", "HEAD"], options).trim(),
+    dirty: Boolean(
+      execFileSync("git", ["status", "--porcelain"], options).trim(),
+    ),
+  };
+} catch {}
 const context = {
   token,
-  commit: execFileSync("git", ["rev-parse", "HEAD"], {
-    encoding: "utf8",
-  }).trim(),
-  dirty: Boolean(
-    execFileSync("git", ["status", "--porcelain"], { encoding: "utf8" }).trim(),
-  ),
+  ...revision,
   node: process.version,
   startedAt: new Date().toISOString(),
   lockContract:

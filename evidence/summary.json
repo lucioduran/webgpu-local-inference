@@ -1,0 +1,53 @@
+{
+  "source": "browser-1794256500335.json",
+  "runs": [
+    {
+      "phase": "online",
+      "backend": "webgpu",
+      "correct": 36,
+      "total": 36,
+      "initializationMs": 49.19999999925494,
+      "firstInferenceMs": 7.300000000745058,
+      "medianMs": 0.40000000037252903,
+      "p95Ms": 1.5,
+      "zeroDurationSamples": 0,
+      "maxAbsoluteError": 0
+    },
+    {
+      "phase": "online",
+      "backend": "wasm",
+      "correct": 36,
+      "total": 36,
+      "initializationMs": 0.6000000014901161,
+      "firstInferenceMs": 0.19999999925494194,
+      "medianMs": 0,
+      "p95Ms": 0.09999999776482582,
+      "zeroDurationSamples": 34,
+      "maxAbsoluteError": 0
+    },
+    {
+      "phase": "offline",
+      "backend": "webgpu",
+      "correct": 36,
+      "total": 36,
+      "initializationMs": 6,
+      "firstInferenceMs": 0.6999999992549419,
+      "medianMs": 0.4000000022351742,
+      "p95Ms": 0.6999999992549419,
+      "zeroDurationSamples": 0,
+      "maxAbsoluteError": 0
+    },
+    {
+      "phase": "offline",
+      "backend": "wasm",
+      "correct": 36,
+      "total": 36,
+      "initializationMs": 0.30000000074505806,
+      "firstInferenceMs": 0,
+      "medianMs": 0,
+      "p95Ms": 0.09999999776482582,
+      "zeroDurationSamples": 34,
+      "maxAbsoluteError": 0
+    }
+  ]
+}

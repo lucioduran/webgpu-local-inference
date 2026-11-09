@@ -1,0 +1,2293 @@
+{
+  "schema": 1,
+  "context": {
+    "commit": "615e4051094b1b9ec865d920503a1516947cae71",
+    "dirty": false,
+    "node": "v24.8.0",
+    "startedAt": "2026-11-09T20:34:26.446Z",
+    "lockContract": "Run this foreground process under the shared benchmark_lock.py wrapper",
+    "threads": 1
+  },
+  "startedAt": "2026-11-09T20:35:00.011Z",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+  "platform": "MacIntel",
+  "hardwareConcurrency": 8,
+  "secureContext": true,
+  "manifest": {
+    "data/fixtures.json": {
+      "bytes": 1828,
+      "sha256": "e1575dfcf3fcaacb6fdf853ae9382cbea8fcc990f0a727822a4d198eaf03adbd"
+    },
+    "public/model.json": {
+      "bytes": 3951,
+      "sha256": "4c92113f9dc216f16da3052b22520e7296058727be907f9246bc67eca364960b"
+    },
+    "public/kernel.wasm": {
+      "bytes": 158,
+      "sha256": "e6ff07ad2ed4cc604698396177c8ab49f0f88a443255108e12d7cc0482fa7936"
+    },
+    "src/kernel.wat": {
+      "bytes": 1033,
+      "sha256": "5b7a4d8a0fe02b3c19c4220ad7d271759c0d4696883e918200d586cbc85039b2"
+    },
+    "src/model.js": {
+      "bytes": 1804,
+      "sha256": "e7e5e58f067f9e599d46e8d0a72c92ef2ef6e1564975cdfa170b604e485fa023"
+    },
+    "src/engine.js": {
+      "bytes": 5815,
+      "sha256": "1dc62f36755fa1f2c282003685f9b919ce62f6c7a9142a3c0e63f54d77bf642f"
+    }
+  },
+  "downloads": [
+    {
+      "path": "/public/model.json",
+      "bytes": 3951,
+      "milliseconds": 3.5
+    },
+    {
+      "path": "/public/kernel.wasm",
+      "bytes": 158,
+      "milliseconds": 3.100000001490116
+    }
+  ],
+  "online": [
+    {
+      "backend": "webgpu",
+      "status": "ok",
+      "initializationMs": 49.19999999925494,
+      "adapter": {
+        "vendor": "amd",
+        "architecture": "rdna-1",
+        "device": "",
+        "description": ""
+      },
+      "allocatedBytes": 712,
+      "samples": [
+        {
+          "round": 0,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 7.300000000745058,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.19999999925494194,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0.5999999977648258,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0.29999999701976776,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.8000000007450581,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.29999999701976776,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.29999999701976776,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 1.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        }
+      ],
+      "unknown": [
+        {
+          "text": "",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        },
+        {
+          "text": "hello wonderful weather",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        },
+        {
+          "text": "1234",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        }
+      ],
+      "preCancellation": {
+        "passed": true,
+        "error": "AbortError: signal is aborted without reason"
+      },
+      "inFlightCancellation": {
+        "passed": true,
+        "error": "AbortError: signal is aborted without reason"
+      },
+      "concurrentPrediction": {
+        "passed": true,
+        "error": "Error: Concurrent prediction is not supported"
+      },
+      "injectedDeviceLoss": {
+        "kind": "explicit device.destroy, not spontaneous",
+        "info": {
+          "reason": "destroyed",
+          "message": "Device was destroyed."
+        },
+        "passed": true,
+        "error": "Error: WebGPU device unavailable"
+      }
+    },
+    {
+      "backend": "wasm",
+      "status": "ok",
+      "initializationMs": 0.6000000014901161,
+      "adapter": null,
+      "allocatedBytes": 65536,
+      "samples": [
+        {
+          "round": 0,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.19999999925494194,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 0.09999999776482582,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        }
+      ],
+      "unknown": [
+        {
+          "text": "",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        },
+        {
+          "text": "hello wonderful weather",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        },
+        {
+          "text": "1234",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        }
+      ],
+      "preCancellation": {
+        "passed": true,
+        "error": "AbortError: signal is aborted without reason"
+      },
+      "inFlightCancellation": null,
+      "concurrentPrediction": null,
+      "injectedDeviceLoss": null
+    }
+  ],
+  "checks": {
+    "injectedUnavailableAdapter": {
+      "backend": "wasm",
+      "reason": "Error: No WebGPU adapter",
+      "result": {
+        "label": "billing",
+        "scores": [
+          -6.794236660003662,
+          -9.507997512817383,
+          -9.507997512817383
+        ]
+      }
+    },
+    "invalidModel": {
+      "passed": true,
+      "error": "Error: Invalid model"
+    },
+    "malformedWasm": {
+      "passed": true,
+      "error": "CompileError: WebAssembly.instantiate(): expected 4 bytes, fell off end @+0"
+    },
+    "strictUnavailableAdapter": {
+      "passed": true,
+      "error": "Error: No WebGPU adapter"
+    },
+    "http404": {
+      "passed": true,
+      "error": "Error: HTTP 404"
+    }
+  },
+  "cacheReady": true,
+  "resourceTimings": [
+    {
+      "path": "/src/app.js",
+      "transferSize": 2966,
+      "encodedBodySize": 2666,
+      "duration": 16.199999999254942
+    },
+    {
+      "path": "/src/engine.js",
+      "transferSize": 6115,
+      "encodedBodySize": 5815,
+      "duration": 6
+    },
+    {
+      "path": "/src/benchmark.js",
+      "transferSize": 7018,
+      "encodedBodySize": 6718,
+      "duration": 6.800000000745058
+    },
+    {
+      "path": "/src/model.js",
+      "transferSize": 2104,
+      "encodedBodySize": 1804,
+      "duration": 4.099999997764826
+    },
+    {
+      "path": "/favicon.ico",
+      "transferSize": 309,
+      "encodedBodySize": 9,
+      "duration": 3
+    },
+    {
+      "path": "/api/context",
+      "transferSize": 566,
+      "encodedBodySize": 266,
+      "duration": 1.699999999254942
+    },
+    {
+      "path": "/public/model.json",
+      "transferSize": 4251,
+      "encodedBodySize": 3951,
+      "duration": 2.600000001490116
+    },
+    {
+      "path": "/public/kernel.wasm",
+      "transferSize": 458,
+      "encodedBodySize": 158,
+      "duration": 2.300000000745058
+    },
+    {
+      "path": "/data/fixtures.json",
+      "transferSize": 2128,
+      "encodedBodySize": 1828,
+      "duration": 1.800000000745058
+    },
+    {
+      "path": "/public/manifest.json",
+      "transferSize": 1072,
+      "encodedBodySize": 772,
+      "duration": 1.800000000745058
+    }
+  ],
+  "offline": [
+    {
+      "backend": "webgpu",
+      "status": "ok",
+      "initializationMs": 6,
+      "adapter": {
+        "vendor": "amd",
+        "architecture": "rdna-1",
+        "device": "",
+        "description": ""
+      },
+      "allocatedBytes": 712,
+      "samples": [
+        {
+          "round": 0,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.6999999992549419,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0.6999999992549419,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0.6000000014901161,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 1.699999999254942,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 0.4000000022351742,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.30000000074505806,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.6000000014901161,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 0.3999999985098839,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0.5,
+          "maxAbsoluteError": 0
+        }
+      ],
+      "unknown": [
+        {
+          "text": "",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        },
+        {
+          "text": "hello wonderful weather",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        },
+        {
+          "text": "1234",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        }
+      ],
+      "preCancellation": {
+        "passed": true,
+        "error": "AbortError: signal is aborted without reason"
+      },
+      "inFlightCancellation": {
+        "passed": true,
+        "error": "AbortError: signal is aborted without reason"
+      },
+      "concurrentPrediction": {
+        "passed": true,
+        "error": "Error: Concurrent prediction is not supported"
+      },
+      "injectedDeviceLoss": {
+        "kind": "explicit device.destroy, not spontaneous",
+        "info": {
+          "reason": "destroyed",
+          "message": "Device was destroyed."
+        },
+        "passed": true,
+        "error": "Error: WebGPU device unavailable"
+      }
+    },
+    {
+      "backend": "wasm",
+      "status": "ok",
+      "initializationMs": 0.30000000074505806,
+      "adapter": null,
+      "allocatedBytes": 65536,
+      "samples": [
+        {
+          "round": 0,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 0,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 0.10000000149011612,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 1,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my card was charged twice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -11.316024780273438,
+            -13.712690353393555,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "please send the tax invoice",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "cancel the subscription and refund money",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -14.163837432861328,
+            -17.917383193969727,
+            -17.917383193969727
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "I need a receipt for payment",
+          "expected": "billing",
+          "label": "billing",
+          "scores": [
+            -7.487383842468262,
+            -9.507997512817383,
+            -9.507997512817383
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my account is locked",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -9.566825866699219,
+            -7.023090839385986,
+            -9.507997512817383
+          ],
+          "milliseconds": 0.09999999776482582,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the login verification code failed",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.940101623535156,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "cannot reset my password",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.246954917907715,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "authentication prevents account access",
+          "expected": "access",
+          "label": "access",
+          "scores": [
+            -13.800931930541992,
+            -10.129171371459961,
+            -13.712690353393555
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the courier has my damaged parcel",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -11.227783203125
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "tracking says shipment delayed",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.940101623535156
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "my order arrived at another address",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.822318077087402
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        },
+        {
+          "round": 2,
+          "text": "the delivery package is missing",
+          "expected": "delivery",
+          "label": "delivery",
+          "scores": [
+            -13.800931930541992,
+            -13.712690353393555,
+            -10.246953964233398
+          ],
+          "milliseconds": 0,
+          "maxAbsoluteError": 0
+        }
+      ],
+      "unknown": [
+        {
+          "text": "",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        },
+        {
+          "text": "hello wonderful weather",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        },
+        {
+          "text": "1234",
+          "label": "unknown",
+          "scores": [
+            -1.0986123085021973,
+            -1.0986123085021973,
+            -1.0986123085021973
+          ]
+        }
+      ],
+      "preCancellation": {
+        "passed": true,
+        "error": "AbortError: signal is aborted without reason"
+      },
+      "inFlightCancellation": null,
+      "concurrentPrediction": null,
+      "injectedDeviceLoss": null
+    }
+  ],
+  "offlineDownloads": [
+    {
+      "path": "/public/model.json",
+      "bytes": 3951,
+      "milliseconds": 7.600000001490116
+    },
+    {
+      "path": "/public/kernel.wasm",
+      "bytes": 158,
+      "milliseconds": 20.699999999254942
+    }
+  ],
+  "offlineControlled": true,
+  "finishedAt": "2026-11-09T20:35:00.330Z",
+  "harness": {
+    "staticOutage": true,
+    "deniedRequests": [
+      {
+        "path": "/",
+        "at": "2026-11-09T20:35:00.218Z"
+      },
+      {
+        "path": "/src/app.js",
+        "at": "2026-11-09T20:35:00.240Z"
+      },
+      {
+        "path": "/src/engine.js",
+        "at": "2026-11-09T20:35:00.258Z"
+      },
+      {
+        "path": "/src/benchmark.js",
+        "at": "2026-11-09T20:35:00.259Z"
+      },
+      {
+        "path": "/src/model.js",
+        "at": "2026-11-09T20:35:00.268Z"
+      },
+      {
+        "path": "/public/model.json",
+        "at": "2026-11-09T20:35:00.273Z"
+      },
+      {
+        "path": "/public/kernel.wasm",
+        "at": "2026-11-09T20:35:00.293Z"
+      },
+      {
+        "path": "/data/fixtures.json",
+        "at": "2026-11-09T20:35:00.301Z"
+      }
+    ],
+    "receivedAt": "2026-11-09T20:35:00.334Z"
+  }
+}

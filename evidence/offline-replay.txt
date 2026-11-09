@@ -1,0 +1,6 @@
+
+> webgpu-local-inference@0.1.0 replay
+> node scripts/replay.mjs
+
+Offline replay: 12/12 synthetic cases correct in Node WASM, exact float32 reference agreement.
+Browser reports checked: 1. Consistency checks do not establish authenticity or compatibility.
