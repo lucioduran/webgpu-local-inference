@@ -4,7 +4,11 @@ import { spawn } from "node:child_process";
 import { once } from "node:events";
 test("static server serves app, rejects missing paths and disables report APIs", async () => {
   const child = spawn(process.execPath, ["scripts/server.mjs"], {
-    env: { ...process.env, PORT: "18025" },
+    env: {
+      ...process.env,
+      PORT: "18025",
+      GIT_DIR: "work/nonexistent-git-metadata",
+    },
     stdio: ["ignore", "pipe", "pipe"],
   });
   try {

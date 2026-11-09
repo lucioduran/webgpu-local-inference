@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "615e4051094b1b9ec865d920503a1516947cae71",
+  "files": {
+    "index.html": "55401f0cd239425f5dfb5660e2ab317c0f8dae89fbb98e6ba9b9ccfef4dba0b1",
+    "sw.js": "8e0b1f1179eaada3f56e3db73b0ea170487934a9e27a7edff703fc0261f18a78",
+    "src/app.js": "8f565c173a826e0b5d0c73e2a26b41f2f1e2903e12cbe08d21681f3e8e3d59de",
+    "src/benchmark.js": "3aa1e90443b260608d31aed2a3fdf92fccf679c5b52651719328abf55d981967",
+    "src/engine.js": "1dc62f36755fa1f2c282003685f9b919ce62f6c7a9142a3c0e63f54d77bf642f",
+    "src/model.js": "e7e5e58f067f9e599d46e8d0a72c92ef2ef6e1564975cdfa170b604e485fa023",
+    "src/kernel.wat": "5b7a4d8a0fe02b3c19c4220ad7d271759c0d4696883e918200d586cbc85039b2",
+    "public/model.json": "4c92113f9dc216f16da3052b22520e7296058727be907f9246bc67eca364960b",
+    "public/kernel.wasm": "e6ff07ad2ed4cc604698396177c8ab49f0f88a443255108e12d7cc0482fa7936",
+    "data/fixtures.json": "e1575dfcf3fcaacb6fdf853ae9382cbea8fcc990f0a727822a4d198eaf03adbd",
+    "docs/protocol.md": "89fdb5a408c033c9a3b49d8cf6b36d7dbf4162a05da1db7380e11f97e5a866fd"
+  }
+}

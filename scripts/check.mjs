@@ -44,3 +44,17 @@ assert.deepEqual(headings, [
 console.log(
   `Verified ${Object.keys(manifest).length} artifact hashes, syntax, punctuation and README structure.`,
 );
+
+const browserSource = JSON.parse(
+  await readFile("evidence/browser-source-manifest.json", "utf8"),
+);
+for (const [path, digest] of Object.entries(browserSource.files)) {
+  assert.equal(
+    createHash("sha256")
+      .update(await readFile(path))
+      .digest("hex"),
+    digest,
+    `Measured browser source changed: ${path}`,
+  );
+}
+console.log("Released browser code matches the measured source revision.");
