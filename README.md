@@ -157,9 +157,9 @@ behavior after OS disconnection, storage eviction or browser restart.
 
 See [raw report](evidence/browser-1794256500335.json),
 [derived summary](evidence/summary.json), [run provenance](evidence/run-provenance.md)
-and [hardware inventory](evidence/hardware.json). The initial project-chat
+and [hardware inventory](evidence/hardware.json). The initial
 connection failures are preserved in [the failed attempt](evidence/browser-blocker.json).
-The coordinator's working CUA browser connection subsequently completed the run.
+A working in-app Chromium connection subsequently completed the run.
 
 ## Testing
 
@@ -181,8 +181,8 @@ CI does not substitute for browser GPU testing.
 
 ## Limitations
 
-The project chat initially lacked browser access; the coordinator operated the
-real in-app Chromium UI through supported CUA APIs while this project's harness
+Initial browser connection attempts failed. A working in-app Chromium connection
+subsequently ran the UI through supported CUA APIs while the foreground harness
 held the shared lock. Safari was not tested. No spontaneous device loss was
 observed. Adapter failure injection and deliberate destruction are labeled tests.
 

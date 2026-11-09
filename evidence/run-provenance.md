@@ -4,10 +4,10 @@ The first connection attempt failed before browser execution. Its raw tool
 responses are preserved in `browser-blocker.json`. That record describes the
 failed attempt, not the final project status.
 
-The coordinator had a working supported CUA connection to the in-app browser.
-This project's foreground harness acquired the shared benchmark lock, then the
-coordinator opened `http://127.0.0.1:8025`, clicked **Run fixed browser evaluation**,
-observed the automatic `/?stage=offline` navigation and the final **Evaluation
+A working supported CUA connection subsequently accessed the in-app browser.
+The foreground harness acquired the shared benchmark lock before the browser
+opened `http://127.0.0.1:8025`. Clicking **Run fixed browser evaluation** triggered
+the automatic `/?stage=offline` navigation and produced the final **Evaluation
 complete** status. No measured inference was run outside that harness lifetime.
 
 Command executed from this repository:
